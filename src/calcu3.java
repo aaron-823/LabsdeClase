@@ -40,6 +40,7 @@
                       resultado = numero1 - numero2 ;
                       System.out.print("El resulatado de la resta es: + resultado");
                       break;
+                             
                   case 3: 
                       seleccion_de_operacion= 3;
                       resultado = numero1 * numero2 ;
@@ -58,7 +59,8 @@
       }
   }
       
-     
+
+
               
   
   
