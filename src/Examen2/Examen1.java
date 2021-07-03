@@ -20,27 +20,27 @@ public class Examen1 {
           
           //Provincias
           
-           int S = 1404242;
-           int A = 848146;
-           int C = 490903;
-           int H = 433677;
-           int G = 326953;
-           int P = 410926;
-           int L = 386862;
+           int Sanjose = 1404242;
+           int Alajuela = 848146;
+           int Cartago = 490903;
+           int Heredia = 433677;
+           int Guanacaste = 326953;
+           int Puntarenas = 410926;
+           int Limon = 386862;
         
           
  
     Scanner escaner = new Scanner(System.in);
     
     while (true) {
-            System.out.println("Menu\n" + "1) Digitar datos de la empresa\n" + "2) Imprimir informaci\u00f3n completa de la empresa\n" + "3) Monto permitido y tasa de interes\n" + "4) Estado inicial");
+            System.out.println("Menu\n" + "1) Digitar datos de la empresa\n" + "2) Imprimir informaci\u00f3n completa de la empresa\n" + "3) Monto permitido y tasa de interes\n" + "4) Estado inicial\n" + "5) prestamo" );
                 
             int opcion = escaner.nextInt();
             
             switch (opcion){
 
                 case 1 ->  {
-                    System.out.println("Digite el nombre");
+                    System.out.println("Digite el nombre de la empresa");
                     nombredelaempresa = escaner.next();
                     System.out.println("Digite la cantidad de trabajadores");
                     trabajadores = escaner.nextInt();
@@ -65,21 +65,25 @@ public class Examen1 {
                                 + "\n " + ingresopormes
                                 + "\n " + creditos
                              ); 
-                             if (indCovid < 20) {
+                             if (indCovid <= 20) {
                             System.out.println("ALERTA!");
                         }   
                         } else {
                         System.out.println("Debe ingresar los datos de la empresa.");
                         }
-   
-                 
-            }
-                 
-            }
- 
-                }
+                      
+                      double tcovid =0.0d;
+                       double poprovincia=0.0d;
+                       double prestamo=0.0d;
+                      if(trabajadores==10){
+                          tcovid = poprovincia + (prestamo*0.5);
+         
+                    }      
+                }    
             }
         }
+    }
+}
     
 
 
