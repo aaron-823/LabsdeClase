@@ -12,20 +12,34 @@ public class Examen1 {
           String nombredelaempresa = "";
           String provinciadondeseencuentra = "";
           int trabajadores = 0;
-          int indCovid; //cantidad de personas con covid
+          int indCovid = 0; //cantidad de personas con covid
           int ingresopormes = 0;
           int creditos = 0;
+          
+          
+          
+          //Provincias
+          
+           int S = 1404242;
+           int A = 848146;
+           int C = 490903;
+           int H = 433677;
+           int G = 326953;
+           int P = 410926;
+           int L = 386862;
+        
+          
  
     Scanner escaner = new Scanner(System.in);
     
     while (true) {
-            System.out.println("Menu \n1) Digitar datos de la empresa\n2) Imprimir información completa de la empresa" + "\n3) Monto permitido y tasa de interes \n4) Estado inicial");
+            System.out.println("Menu\n" + "1) Digitar datos de la empresa\n" + "2) Imprimir informaci\u00f3n completa de la empresa\n" + "3) Monto permitido y tasa de interes\n" + "4) Estado inicial");
                 
             int opcion = escaner.nextInt();
             
             switch (opcion){
 
-                case 1: {
+                case 1 ->  {
                     System.out.println("Digite el nombre");
                     nombredelaempresa = escaner.next();
                     System.out.println("Digite la cantidad de trabajadores");
@@ -35,20 +49,50 @@ public class Examen1 {
                     System.out.println("Digite los creditos actuales");
                     creditos = escaner.nextInt();
                     System.out.println("Digite la cantidad de trabajadores con covid");
-                    indCovid = escaner.nextInt();
-                     System.out.println("Digite la provincia");
+                    indCovid = escaner.nextInt();  
+                    System.out.println("Digite la provincia");
                     provinciadondeseencuentra = escaner.next();
-                    
             
-            
-            
-            
-            
+                }
                 
-            break;
+                 case 2 ->  {
+                      if (!nombredelaempresa.equals("")) {
+                        System.out.println("Datos de la empresa: "
+                                + "\n " + nombredelaempresa
+                                + "\n " + provinciadondeseencuentra
+                                + "\n " + trabajadores
+                                + "\n " + indCovid
+                                + "\n " + ingresopormes
+                                + "\n " + creditos
+                             ); 
+                             if (indCovid < 20) {
+                            System.out.println("ALERTA!");
+                        }   
+                        } else {
+                        System.out.println("Debe ingresar los datos de la empresa.");
+                        }
+   
+                 
+            }
+                 
+            }
+ 
+                }
+            }
+        }
     
-}
-}
-}
-     }
-}
+
+
+        
+
+
+    
+                
+                 
+                 
+                 
+
+
+
+     
+
